@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate, Navigate } from "react-router-dom";
 import { FaSearch, FaUser } from "react-icons/fa";
 import "./style.css";
 import tour1 from "../src/assets/img/tour-img/newyork.jpg"
@@ -14,6 +15,7 @@ import Chatbot from "./components/Chatbot";
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isChatOpen, setIsChatOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <>
@@ -52,8 +54,8 @@ function App() {
                         </li>
                     </ul>
                     {/* Search */}
-                    <div className="search-btn">
-                        <FaSearch className="search-icon" />
+                    <div className="login-btn" onClick={() => navigate("/login")}>
+                        <p className="login-icon">Đăng nhập</p>
                     </div>
                     <div id="mobile-menu" className="menu-mobile">
                         <i className=" menu-icon ti-menu" />

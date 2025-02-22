@@ -176,10 +176,10 @@ html {
 }
 
 #header .menu-mobile,
-#header .search-btn {
+#header .login-btn {
     float: right;
     /* Làm cho nút tìm kiếm kéo về bên phải */
-    padding: 14px 21px;
+    padding: 0px 20px;
 
 }
 
@@ -194,14 +194,14 @@ html {
 }
 
 
-#header .search-btn:hover {
+#header .login-btn:hover {
     cursor: pointer;
     /* Khi di chuột vào nút tìm kiếm sẽ thay đổi con trỏ */
     background-color: red;
 }
 
 #header .menu-icon,
-#header .search-icon {
+#header .login-icon {
     font-size: 15px;
     color: #fff;
     line-height: 46px;
